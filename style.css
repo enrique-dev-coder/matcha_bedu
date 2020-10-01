@@ -1,0 +1,45 @@
+h1 {
+    color: #025157;
+    font-family: "Alegreya", serif;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+
+h4 {
+   color: #46484c;
+   font-family: "Slabo 27px", serif;
+   font-size: 20px;
+   text-align: center;
+}
+
+p {
+color: #8b8b8bcc;
+text-align: center;
+
+}
+
+form {
+    text-align: center;
+}
+
+body {
+    background-color: #FFFBF7;
+}
+
+input{
+    border-radius: 5px;
+    padding: 10px;
+    border: solid gray 1px;
+    height: 30px;
+}
+
+button{
+    background-color: #025157;
+    margin: -5px;
+    color: white;
+    border-style: none;
+    height: 50px;
+    width: 110px;
+    border-radius: 0  10px 10px 0;
+}
