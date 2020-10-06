@@ -1,9 +1,93 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+
+
+
+.header {
+    
+    font-size: 0;
+    margin-left: 20px; /*  se pone margen izquierdo y derecho para que no se recorra*/
+    margin-right: 20px;
+    /*margin: top right bottom left */
+}
+
+.header > * {   /* selecciona todos los elemtnos del .header pero solo los hijos directos, en este caso el a nav y div */
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+}
+
+
+.logo {
+    width: 15%;
+}
+
+.logo  img {
+    height: 100%;
+    float: left;
+    margin-top: 5PX;
+}
+
+.navbar {
+    width: 70%;
+    text-align: center;
+    color:teal;
+    font-weight: 600;
+}
+
+
+
+.actions {
+    width: 15%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.actions > * { /* todos los elementos hijos de actions como el signm in y el button*/
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.actions a {
+    color: #67b54b;
+    text-decoration: none;
+}
+
+.actions button {
+    color: white;
+    background-color: #67b54b;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0;
+    border-radius: 5px;
+    float: right;
+    margin-right: 10PX;
+}
+
+
+
+.menu-item {
+    margin-right: 25px;
+}
+
 h1 {
     color: #025157;
     font-family: "Alegreya", serif;
     text-align: center;
     font-size: 60px;
     margin-bottom: 24px;
+    font-family: 'Open Sans', sans-serif
+   
 }
 
 h4 {
@@ -11,6 +95,7 @@ h4 {
    font-family: "Slabo 27px", serif;
    font-size: 20px;
    text-align: center;
+   font-family: 'Noto Sans', sans-serif;
 }
 
 p {
@@ -25,16 +110,18 @@ form {
 
 body {
     background-color: #FFFBF7;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
 }
 
-input{
-    border-radius: 5px;
+input {
+    border-radius: 5px 0 0 5px;
     padding: 10px;
     border: solid gray 1px;
-    height: 30px;
-}
+    height: 28px;
+   }
 
-button{
+button { 
     background-color: #025157;
     margin: -5px;
     color: white;
@@ -50,4 +137,13 @@ img {
   left: 1000px;*/
   display:block;  /* centrar una iamgen*/
   margin:auto;
+}
+
+.main{
+    margin-top: 205px;
+   
+}
+
+li {
+    display: inline; /* se usa para que queden todos en linea y se haga una caja solo en su contenido*/
 }
