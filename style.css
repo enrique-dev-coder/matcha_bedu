@@ -140,10 +140,80 @@ img {
 }
 
 .main{
-    margin-top: 205px;
+    margin-top: 285px;
+    text-align: center;
    
 }
 
 li {
     display: inline; /* se usa para que queden todos en linea y se haga una caja solo en su contenido*/
+}
+
+/*#articleimg{ mejor quitar uan clase de mas y  usar el otro selector
+    width: 500px;
+}*/
+
+#imgcontainer {
+    margin-top: 25px;
+}
+
+#imgcontainer img {
+    width: 70%;
+}
+
+
+.publish {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+
+.publish h3 {
+    color:#025157;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.publish >p { /* solo al hijo directo que es el primer parrafo */
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.publish > form {
+    display: flex;
+}
+  
+.publish > form p {
+    color: #025157;
+    margin-right: 18px;
+}
+
+.promo {
+    display:flex;
+    width: 70%;
+    margin: 100px auto; /* esto quiere decir que tiene 100 de margen arriba y 100 abajo y a los lados es auto*/
+    align-items: center;
+}
+
+.explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+
+.explanatory-video img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+#fixed-header {
+    position: fixed;  /* Usar estas propiedades para hacer que la barra ocupe toda la pantalla*/
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
 }
