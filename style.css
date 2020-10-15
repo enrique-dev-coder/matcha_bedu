@@ -4,18 +4,17 @@
     padding: 0;
 } */
 
-
-
-
 .header {
 
     font-size: 0;
-    margin-left: 20px; /*  se pone margen izquierdo y derecho para que no se recorra*/
+    margin-left: 20px;
+    /*  se pone margen izquierdo y derecho para que no se recorra*/
     margin-right: 20px;
     /*margin: top right bottom left */
 }
 
-.header > * {   /* selecciona todos los elemtnos del .header pero solo los hijos directos, en este caso el a nav y div */
+.header > * {
+    /* selecciona todos los elemtnos del .header pero solo los hijos directos, en este caso el a nav y div */
     display: inline-block;
     font-size: 16px;
     vertical-align: middle;
@@ -23,12 +22,11 @@
     line-height: 45px;
 }
 
-
 .logo {
     width: 15%;
 }
 
-.logo  img {
+.logo img {
     height: 100%;
     float: left;
     margin-top: 5PX;
@@ -37,11 +35,9 @@
 .navbar {
     width: 70%;
     text-align: center;
-    color:teal;
+    color: teal;
     font-weight: 600;
 }
-
-
 
 .actions {
     width: 15%;
@@ -50,7 +46,8 @@
     font-weight: 600;
 }
 
-.actions > * { /* todos los elementos hijos de actions como el signm in y el button*/
+.actions > * {
+    /* todos los elementos hijos de actions como el signm in y el button*/
     margin-right: 10px;
     margin-left: 10px;
     font-size: 14px;
@@ -64,17 +61,12 @@
 .actions button {
     color: white;
     background-color: #67b54b;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 14px;
     border: 0;
     border-radius: 5px;
     float: right;
     margin-right: 10PX;
 }
-
-
 
 .menu-item {
     margin-right: 25px;
@@ -82,25 +74,24 @@
 
 h1 {
     color: #025157;
-    font-family:'Alegreya', serif;
+    font-family: 'Alegreya', serif;
     text-align: center;
     font-size: 60px;
     margin-bottom: 24px;
-    
 
 }
 
 h4 {
-   color: #46484c;
-   font-family: "Slabo 27px", serif;
-   font-size: 20px;
-   text-align: center;
-   font-family: 'Noto Sans', sans-serif;
+    color: #46484c;
+    font-family: "Slabo 27px", serif;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 p {
-color: #8b8b8bcc;
-text-align: center;
+    color: #8b8b8bcc;
+    text-align: center;
 
 }
 
@@ -119,7 +110,7 @@ input {
     padding: 10px;
     border: solid gray 1px;
     height: 28px;
-   }
+}
 
 button {
     background-color: #025157;
@@ -128,15 +119,16 @@ button {
     border-style: none;
     height: 50px;
     width: 110px;
-    border-radius: 0  10px 10px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 img {
-  /*position: relative;
+    /*position: relative;
   top:15px;
   left: 1000px;*/
-  display:block;  /* centrar una iamgen*/
-  margin:auto;
+    display: block;
+    /* centrar una iamgen*/
+    margin: auto;
 }
 
 .main {
@@ -146,7 +138,8 @@ img {
 }
 
 li {
-    display: inline; /* se usa para que queden todos en linea y se haga una caja solo en su contenido*/
+    display: inline;
+    /* se usa para que queden todos en linea y se haga una caja solo en su contenido*/
 }
 
 /*#articleimg{ mejor quitar uan clase de mas y  usar el otro selector
@@ -161,20 +154,19 @@ li {
     width: 70%;
 }
 
-
 .publish {
     flex: 1;
     box-sizing: border-box;
 }
 
-
 .publish h3 {
-    color:#025157;
-    font-family:'Alegreya', serif;
+    color: #025157;
+    font-family: 'Alegreya', serif;
     font-size: 40px;
 }
 
-.publish >p { /* solo al hijo directo que es el primer parrafo */
+.publish > p {
+    /* solo al hijo directo que es el primer parrafo */
     font-size: 16px;
     color: #343434;
     line-height: 1.5;
@@ -186,15 +178,17 @@ li {
     display: flex;
 }
 
-.publish > form p { /* los p que esten en form que sean hijos de .publish*/
+.publish > form p {
+    /* los p que esten en form que sean hijos de .publish*/
     color: #025157;
     margin-right: 18px;
 }
 
 .promo {
-    display:flex;
+    display: flex;
     width: 70%;
-    margin: 100px auto; /* esto quiere decir que tiene 100 de margen arriba y 100 abajo y a los lados es auto*/
+    margin: 100px auto;
+    /* esto quiere decir que tiene 100 de margen arriba y 100 abajo y a los lados es auto*/
     align-items: center;
 }
 
@@ -205,14 +199,14 @@ li {
     flex: 1;
 }
 
-
 .explanatory-video img {
     width: 120px;
     margin-top: 10px;
 }
 
 #fixed-header {
-    position: fixed;  /* Usar estas propiedades para hacer que la barra ocupe toda la pantalla*/
+    position: fixed;
+    /* Usar estas propiedades para hacer que la barra ocupe toda la pantalla*/
     top: 0;
     left: 0;
     right: 0;
@@ -224,8 +218,8 @@ li {
     padding: 5% 10%;
     display: grid;
     grid-template: repeat(2, 330px) / repeat(2, 1fr);
-  }
-  .features .feature-card {
+}
+.features .feature-card {
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
@@ -235,62 +229,58 @@ li {
     display: flex;
     align-items: center;
     overflow: hidden;
-  }
-  .features .feature-card .feature-content {
+}
+.features .feature-card .feature-content {
     padding: 30px 20px 40px 40px;
     flex: 2;
-  }
-  .features .feature-card .feature-content > * {
+}
+.features .feature-card .feature-content > * {
     margin-bottom: 1rem;
     margin-top: 0;
-  }
-  .features .feature-card .feature-content img {
+}
+.features .feature-card .feature-content img {
     width: 50px;
     margin-left: 0;
-  }
+}
 
-  .features .feature-card .feature-content figure {
+.features .feature-card .feature-content figure {
     margin-left: 0;
-  }
-  .features .feature-card .feature-content h3 {
+}
+.features .feature-card .feature-content h3 {
     font-size: 24px;
     color: #343434;
     font-weight: 400;
-  }
-  .features .feature-card .feature-content p {
+}
+.features .feature-card .feature-content p {
     font-size: 16px;
     color: #7e7e7e;
     font-weight: 400;
     text-align: left;
-  }
-  .features .feature-card .feature-content a {
+}
+.features .feature-card .feature-content a {
     font-size: 16px;
     color: #67b54b;
     font-weight: 600;
     text-decoration: none;
-  }
-  .features .feature-card .feature-image {
+}
+.features .feature-card .feature-image {
     flex: 1;
     width: 40%;
     position: relative;
     right: -50px;
     height: 80%;
     transition: right 1s;
-  }
+}
 
-
-  .features .feature-card .feature-image:hover{
+.features .feature-card .feature-image:hover {
     right: 0;
-  }
+}
 
-
-
-
-  .features .feature-card .feature-image figure,
-  .features .feature-card .feature-image img {
+.features .feature-card .feature-image figure,
+.features .feature-card .feature-image img {
     margin-top: 0;
     height: 100%;
-  }
+}
 .successtories-container {
     width: 100%;
     height: 500px;
@@ -298,18 +288,19 @@ li {
     display: flex;
 }
 
-.marcas img{
+.marcas img {
     width: 400px;
 
 }
 
 /* la query solo funciona con la etiqueta meta*/
-@media (max-width: 575px){
+@media (max-width: 575px) {
     .header {
-       width: 100%;
-       margin-left: 0;
+        width: 100%;
+        margin-left: 0;
     }
-    .navbar, .actions {
+    .actions,
+    .navbar {
         display: none;
     }
 
@@ -331,7 +322,7 @@ li {
         max-width: 90%;
     }
     .explanatory-video > video {
-        width:100%;
+        width: 100%;
     }
     .publish {
         margin-top: 10px;
@@ -340,16 +331,17 @@ li {
         font-size: 25px;
         line-height: 1.2;
     }
-    .publish > form{
-        flex-direction: column; /*  es para que los elementos este en la misma columna*/
+    .publish > form {
+        flex-direction: column;
+        /*  es para que los elementos este en la misma columna*/
     }
-    .publish > form > div{
+    .publish > form > div {
         height: 50px;
         margin-top: 10px;
     }
     .publish > form > div > input {
         width: 65%;
-    } 
+    }
 
     .features {
         grid-template: repeat(4,1fr) / 1fr;
@@ -358,5 +350,12 @@ li {
     }
     .features .feature-card .feature-image {
         display: none;
+    }
+}
+
+@media(max-width:511px) {
+    /* Query para que se ajuste al iphone X*/
+    .publish > form > div > input {
+        width: 35%;
     }
 }
